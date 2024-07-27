@@ -1,0 +1,817 @@
+/*styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap");
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar-left {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-right {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-container {
+  display: flex;
+  height: 140vh;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero-info-container {
+  height: 100%;
+  /* background-color: cyan; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-info-container-heading {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 7rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    -86deg,
+    #f8e4be 100%,
+    #fff3e0 100%,
+    #fff8e8 100%,
+    #dfc39d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: #221518;
+}
+
+.hero-info-container-description {
+  color: #dabb9e;
+  font-size: 24px;
+}
+
+.hero-info-container-button {
+  background-color: #876c58;
+  border-radius: 36px;
+  padding: 12px 24px;
+  /* width: 30%; */
+  font-size: 24px;
+  color: #f8e4be;
+  border: none;
+}
+
+.hero-image-container {
+  width: 50%;
+  position: relative;
+  background-color: #7c573c;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -2%;
+  right: 0;
+  /* transform: translateX(-5%); */
+  /* height: 100%; */
+  /* top: 0;
+  left: 0;
+  right: 0; */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+}
+
+.story-container {
+  background-color: #221518;
+  width: 100%;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #221518;
+  padding: 40px;
+  margin-top: 36px;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.slider-container::after {
+  content: "Our Story";
+  position: absolute;
+  top: 0%;
+  /* left: 75%; */
+  right: 10%;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+  color: #f8e4be;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: #54372b;
+  padding: 0;
+}
+
+/* .slide::before {
+  content: '';
+  position: absolute;
+  top: -60%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(125, 86, 71, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px rgba(125, 86, 71, 0.8);
+} */
+
+.slide-image-container {
+  width: 40%;
+  /* background-color: blue; */
+  display: flex;
+}
+
+.slide-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+
+.description {
+  text-align: left;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  height: 100%;
+  color: #FFFFFF;
+}
+
+.dots {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #54372b;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 40px 0px;
+  margin-top: 20px;
+  gap: 40px;
+  /* background-color: blue; */
+}
+.services-cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+.services-heading {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.services-cards {
+  /* background-color: red; */
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-card {
+  background-color: #54372a;
+  width: 14%;
+  height: 225px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f8e4be;
+  gap: 5%;
+}
+
+.service-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.offer-conatiner {
+  height: 500px;
+  /* background-color: red; */
+  /* padding: 32px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-card::after {
+  content: "Offer";
+  position: absolute;
+  top: -15%;
+  left: 5%;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* height: 20px;
+  width: 20px; */
+  font-size: 4rem;
+  color: #f8e4be;
+  /* background-color: red; */
+}
+
+.offer-card {
+  background-color: #54372b;
+  width: 80%;
+  height: 350px;
+  border-radius: 36px;
+  position: relative;
+  display: flex;
+  /* flex: 1; */
+  /* height: 500px; */
+}
+
+.offer-description {
+  width: 65%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0px 52px;
+}
+
+.offer-image-container {
+  width: 35%;
+  padding: 16px;
+  /* background-color: antiquewhite; */
+}
+
+.offer-heading {
+  font-size: 2rem;
+  color: #f8e4be;
+}
+
+.offer-percentage {
+  font-size: 3rem;
+  background-color: transparent;
+  color: #f8e4be;
+}
+
+.offer-detail {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.offer-button {
+  background-color: #876c58;
+  border-radius: 36px;
+  padding: 12px 24px;
+  width: 30%;
+  font-size: 24px;
+  color: #f8e4be;
+  border: none;
+  /* display: flex; */
+}
+
+.offer-image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.reserve-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #54372b;
+  width: 100%;
+  position: relative;
+  height: 600px;
+  /* padding: 20px 40px; */
+  /* background-color: blue; */
+}
+
+.reserve-container::before {
+  content: "Reserve a table";
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* height: 20px;
+  width: 20px; */
+  /* background-color: red; */
+  font-size: 4rem;
+  color: #f8e4be;
+}
+
+.reserve-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #54372b;
+  width: 100%;
+  position: relative;
+  height: 600px;
+  /* padding: 20px 40px; */
+  /* background-color: blue; */
+}
+
+/* .reserve-container {
+  display: flex;
+} */
+
+.reserve-image-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.reserve-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  width: 50%;
+  /* background-color: aquamarine; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  padding: 40px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.form-date {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.form-time-user-type {
+  display: flex;
+  gap: 24px;
+}
+
+.form-time {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.form-user-type {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.form-name {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.form-phone {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.form-email-button {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.form-email {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  flex: 2;
+}
+
+.form-button {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.products-conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  /* width: 100%; */
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 40px; /* Add gap between slides */
+}
+
+.carousel-slide {
+  min-width: calc(100% / 3 - 40px); /* Adjust width to account for gap */
+  background-color: #53362a;
+  /* border: 1px solid #ddd; */
+  box-sizing: border-box;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  border-radius: 32px;
+}
+
+.image-container {
+  flex: 0 0 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #53362a;
+  border-radius: 32px;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-container {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d5349;
+  font-size: 20px;
+  border-radius: 0px 0px 32px 32px;
+  /* border-top: 1px solid #ddd; */
+}
+
+.carousel-button {
+  position: absolute;
+  bottom: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 47%;
+}
+
+.next {
+  right: 47%;
+}
+
+.blogs-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #55382b;
+  width: 100%;
+  position: relative;
+  height: 600px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.blogs-container::before {
+  content: "Our Blog";
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* height: 20px;
+  width: 20px; */
+  /* background-color: red; */
+  font-size: 4rem;
+  color: #f8e4be;
+}
+
+.blog-card-conatiner {
+  width: 100%;
+  height: auto;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.whiskey-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  padding: 48px 48px 0 48px;
+}
+
+.whiskey-cards::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 5px;
+}
+
+.whiskey-cards::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #02bcf5, #0073e6, #003ab9, #635bff);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  opacity: 0.5;
+}
+
+.whiskey-cards:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
+.whiskey-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 450px;
+  flex-basis: 450px;
+  border-radius: 16px;
+  margin: 8px;
+  padding: 16px;
+  box-shadow: 0 -16px 24px rgb(0 0 0 / 5%);
+  color: #ffffff;
+  height: 350px;
+  transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.whiskey-card:hover {
+  background-color: #0a2540 !important;
+  transform: scale(1.04) translateY(-16px);
+  box-shadow: 0 -16px 24px rgb(0 0 0 / 10%);
+}
+
+.whiskey-card h3 {
+  padding-top: 0;
+  line-height: 1.35;
+}
+
+.whiskey-card .whiskey-card--content {
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 300;
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.whiskey-card .whiskey-card--footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-cards-navigation {
+  display: flex;
+  cursor: pointer;
+  /* justify-content: end; */
+}
+
+.footer-container {
+  height: 350px;
+  background-color: #533529;
+  display: flex;
+  /* padding: 20px 0 110px 0; */
+  padding: 20px;
+  position: relative;
+  margin: 0;
+}
+
+.footer-image {
+  width: 20%;
+}
+
+.footer-image img {
+  width: 100%;
+  height: auto;
+  transform: translateX(20%) translateY(-10%);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  /* gap: 28px; */
+  padding: 80px 0px;
+  /* text-align: center; */
+}
+
+.grid-item {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff3e0;
+}
+
+.footer-address {
+  display: grid;
+  grid-template-columns: auto;
+  width: 20%;
+  padding: 80px 0px;
+}
+
+.address-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff3e0;
+}
+
+.copyright-container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff3e0a6;
+}
+
+.whiskey-card .whiskey-card--content img {
+  max-width: 100%;
+}
+
+.whiskey-card .whiskey-card--link {
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.7;
+  margin: auto 0 0 0;
+}
+
+.whiskey-card h3 a,
+.whiskey-card .whiskey-card--link a {
+  color: #ffffff;
+}
+
+.whiskey-card .whiskey-card--link a svg {
+  --arrowSpacing: 5px;
+  --arrowHoverTransition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  --arrowHoverOffset: translateX(3px);
+  --arrowTipTransform: none;
+  --arrowLineOpacity: 0;
+  position: relative;
+  top: 1px;
+  margin-left: var(--arrowSpacing);
+  stroke-width: 2px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.HoverArrow__linePath {
+  opacity: var(--arrowLineOpacity);
+  transition: opacity var(--hoverTransition, var(--arrowHoverTransition));
+}
+
+.HoverArrow__tipPath {
+  transform: var(--arrowTipTransform);
+  transition: transform var(--hoverTransition, var(--arrowHoverTransition));
+}
+
+.whiskey-card:hover .HoverArrow__linePath {
+  --arrowLineOpacity: 1;
+}
+
+.whiskey-card:hover .HoverArrow__tipPath {
+  --arrowTipTransform: var(--arrowHoverOffset);
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 calc(100% - 10px); /* Adjust width to show 1 slide at a time on smaller screens */
+  }
+
+  .text-container {
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Customize scrollbar for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8758ff;
+  border-radius: 1px;
+}
+
+/* Customize scrollbar for Firefox */
+* {
+  scrollbar-color: #8758ff transparent;
+  scrollbar-width: none;
+}

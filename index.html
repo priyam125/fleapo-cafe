@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #221518">
+    <header>
+      <nav class="navbar-container">
+        <div class="navbar-left">
+          <img src="assets/logo.png" alt="logo" height="60px" width="60px" />
+          <div class="navbar-icons">
+            <img
+              src="assets/NavbarIcon1.png"
+              alt="NavbarUser"
+              height="20px"
+              width="20px"
+            />
+            <img
+              src="assets/NavbarCartImg.png"
+              alt="NavbarCart"
+              height="20px"
+              width="20px"
+            />
+          </div>
+        </div>
+        <div class="navbar-right">
+          <a href="#" class="navbar-links">Home</a>
+          <a href="#" class="navbar-links">Menu</a>
+          <a href="#" class="navbar-links">Services</a>
+          <a href="#" class="navbar-links">Product</a>
+          <a href="#" class="navbar-links">Blog</a>
+          <a href="#" class="navbar-links">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-container">
+        <div class="hero-info-container">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 70%;
+              gap: 4rem;
+              transform: translateY(-30%);
+            "
+          >
+            <div class="hero-info-container-heading">Elza Coffee</div>
+            <div class="hero-info-container-description">
+              Today's good mood is sponsored by coffee search for your coffee
+              now
+            </div>
+            <div class="hero-info-container-buttons">
+              <button class="hero-info-container-button">Shop Now</button>
+              <button class="hero-info-container-button">Catalog</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-container">d</div>
+        <div class="hero-image">
+          <img
+            src="assets/HeroImg.png"
+            alt="heroImage"
+            height="1100px"
+            width="1300px"
+          />
+        </div>
+      </section>
+
+      <section class="story-container">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slider-inner">
+              <div class="slide">
+                <div class="slide-image-container">
+                  <img
+                    src="assets/OurStoryImg.png"
+                    alt="Project 1"
+                    height="100px"
+                    width="100px"
+                  />
+                </div>
+                <div class="description">
+                  Eliza is an online coffee store that offers the widest
+                  selection of specialty coffees and teas from around the world.
+                  From medium-dark roast single origin to flavored espresso
+                  beans, they offer a variety of ethically sourced products to
+                  tantalize any customer’s palate. For those looking for unique
+                  brewing equipment, Eliza also carries a full range of quality
+                  espresso makers, grinders, brewers, French presses and more.
+                  On top of all that, their baristas are highly trained
+                  professionals who know exactly how to make the perfect cup for
+                  each customer. Whether it's for home or business use, Eliza
+                  has you covered - all conveniently available at the click of a
+                  button!
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image-container">
+                  <img
+                    src="assets/OurStoryImg.png"
+                    alt="Project 2"
+                    height="200px"
+                    width="auto"
+                  />
+                </div>
+                <div class="description">Project 2 description</div>
+              </div>
+              <div class="slide">
+                <div class="slide-image-container">
+                  <img
+                    src="assets/OurStoryImg.png"
+                    alt="Project 3"
+                    height="200px"
+                    width="auto"
+                  />
+                </div>
+                <div class="description">Project 3 description</div>
+              </div>
+            </div>
+          </div>
+          <div class="dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-container">
+        <div
+          class="services-cards-container"
+          style="
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <h2 class="services-heading">Services</h2>
+          <div class="services-cards">
+            <div class="service-card">
+              <img
+                src="assets/ServicesIcon1.png"
+                alt="ServicesIcon1"
+                width="100px"
+                height="100px"
+              />
+              <div>Equipment</div>
+            </div>
+            <div class="service-card">
+              <img
+                src="assets/ServicesIcon2.png"
+                alt="ServicesIcon2"
+                width="100px"
+                height="100px"
+              />
+              <div>Type Of Coffee</div>
+            </div>
+            <div class="service-card">
+              <img
+                src="assets/ServicesIcon3.png"
+                alt="ServicesIcon3"
+                width="100px"
+                height="100px"
+              />
+              <div>Take A Whey</div>
+            </div>
+            <div class="service-card">
+              <img
+                src="assets/ServicesIcon4.png"
+                alt="ServicesIcon4"
+                width="100px"
+                height="100px"
+              />
+              <div>Beans Variant</div>
+            </div>
+            <div class="service-card">
+              <img
+                src="assets/ServicesIcon5.png"
+                alt="ServicesIcon5"
+                width="100px"
+                height="100px"
+              />
+              <div>Pastry</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offer-conatiner">
+          <div class="offer-card">
+            <div class="offer-description">
+              <div class="offer-heading">
+                Up To <span class="offer-percentage">50%</span> Off
+              </div>
+              <div class="offer-detail">
+                At our cafe, we take pride in providing our customers with the
+                best coffee around. Our carefully-selected coffees come from
+                some of the most renowned coffee growing regions in the world,
+                ensuring that each cup is unrivaled in flavor and freshness.
+              </div>
+              <button class="offer-button">Shop Now</button>
+            </div>
+            <div class="offer-image-container">
+              <img
+                alt="offer-image"
+                src="assets/OfferImg.png"
+                height="350px"
+                width="350px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="reserve-container">
+          <div class="reserve-image-container">
+            <img
+              src="assets/ReserveImg.png"
+              alt="ReserveImage"
+              height="450px"
+              width="450px"
+            />
+          </div>
+          <div class="form-container">
+            <form class="services-form">
+              <!-- <label for="date">Date:</label> -->
+              <input
+                class="form-date"
+                type="date"
+                id="date"
+                name="date"
+                required
+              />
+
+              <!-- <label for="time">Time:</label> -->
+              <div class="form-time-user-type">
+                <input
+                  class="form-time"
+                  type="time"
+                  id="time"
+                  name="time"
+                  required
+                />
+
+                <select
+                  class="form-user-type"
+                  id="user-type"
+                  name="user-type"
+                  required
+                >
+                  <option value="new">New</option>
+                  <option value="returning">Returning</option>
+                </select>
+              </div>
+
+              <!-- <label for="name">Name:</label> -->
+              <input
+                class="form-name"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+
+              <!-- <label for="phone">Phone Number:</label> -->
+              <input
+                class="form-phone"
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
+
+              <!-- <label for="email">Email:</label> -->
+              <div class="form-email-button">
+                <input
+                  class="form-email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+
+                <button class="form-button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-conatiner">
+        <h2>Recommended</h2>
+        <div class="carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <div class="image-container">
+                <img
+                  src="assets/ProductImg1.png"
+                  alt="Slide 1"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="text-container">Slide 1</div>
+            </div>
+            <div class="carousel-slide">
+              <div class="image-container">
+                <img
+                  src="assets/ProductImg2.png"
+                  alt="Slide 2"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="text-container">Slide 2</div>
+            </div>
+            <div class="carousel-slide">
+              <div class="image-container">
+                <img
+                  src="assets/ProductImg3.png"
+                  alt="Slide 3"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="text-container">Slide 3</div>
+            </div>
+            <div class="carousel-slide">
+              <div class="image-container">
+                <img
+                  src="assets/ProductImg1.png"
+                  alt="Slide 4"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="text-container">Slide 4</div>
+            </div>
+            <div class="carousel-slide">
+              <div class="image-container">
+                <img
+                  src="assets/ProductImg2.png"
+                  alt="Slide 5"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="text-container">Slide 5</div>
+            </div>
+            <div class="carousel-slide">
+              <div class="image-container">
+                <img
+                  src="assets/ProductImg3.png"
+                  alt="Slide 6"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="text-container">Slide 6</div>
+            </div>
+          </div>
+          <div style="background-color: blue">
+            <button class="carousel-button prev">←</button>
+            <button class="carousel-button next">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="blogs-container">
+        <div class="blog-card-conatiner">
+          <div class="whiskey-cards alignfull">
+            <div class="whiskey-card" style="background-color: #997d6c">
+              <h3>How To Make A Great Coffee</h3>
+              <p class="whiskey-card--content">
+                Making a cup of coffee doesn't have to be complicated. Start by
+                gathering your supplies: coffee grounds, water, and a French
+                press, mug or other vessel. Next, measure out 2 tablespoons of
+                ground coffee per 8 ounces of water. If you're using a French
+                press, pour the measured grounds into the bottom of the press
+                followed by hot water (between 195-205 degrees Fahrenheit). Let
+                sit for three minutes before gently pushing down on the filter
+                to trap the grounds at the bottom; this will create an intense
+                flavor with slightly heavier body than filtered methods. If you
+                have neither a French press nor filter, just pour your measured
+                grounds directly into a mug or vessel and top with piping hot
+                water. Give it a stir and let it sit for 3-4 minutes before
+                consuming--but don't leave it too long as this method won't
+                produce quite as bold of a flavor as either filtering or
+                pressing would!
+              </p>
+              <div class="whiskey-card--footer">
+                <div class="whiskey-card-image">
+                  <img src="assets/BlogImg1.png" alt="BlogImg1" />
+                </div>
+                <div>More</div>
+              </div>
+            </div>
+            <div class="whiskey-card" style="background-color: #997d6c">
+              <h3>Why Does Caffeine Make Us Stay Awake?</h3>
+              <p class="whiskey-card--content">
+                Caffeine works by blocking adenosine receptors in the brain,
+                which facilitates energy production and makes us feel more
+                alert. Caffeine also increases adrenaline levels, further
+                boosting your energy and heart rate, as well as other hormones
+                like dopamine that can make you feel more awake. The combination
+                of these effects makes caffeine a stimulant that is all-too
+                common in both food and drinks to give us an extra boost of
+                energy when we need it most. It's no wonder why so many people
+                rely on caffeinated beverages - it really can make us stay
+                awake!
+              </p>
+              <div class="whiskey-card--footer">
+                <div class="whiskey-card-image">
+                  <img src="assets/BlogImg2.png" alt="BlogImg1" />
+                </div>
+                <div>More</div>
+              </div>
+            </div>
+            <div class="whiskey-card" style="background-color: #997d6c">
+              <h3>Different types of coffee Explained</h3>
+              <p class="whiskey-card--content">
+                Coffee is a staple in the lives of many and comes in a variety
+                of forms. Whether you prefer hot or iced, espresso-based or
+                filter, you’re spoilt for choice. To help beginners navigate
+                their first foray into the world of coffee, let’s breakdown some
+                basic categories: Espresso is an especially intense type of
+                brewed coffee made by forcing pressurized water through finely
+                ground beans. It has a strong flavor and can be used to make all
+                manner of delicious drinks like flat whites, cappuccinos and
+                lattes. Filter coffee is made with a paper filter that holds
+                back most grounds before allowing the liquid to drip down into
+                your cup. Its taste is less intense than that of espresso but
+                still robust enough to serve with milk or flavored syrups if
+                desired. Cold brew on the other hand isn't actually brewed using
+                heat but rather steeped in cold water overnight to produce a
+                smooth yet sweet drink - great over ice! Finally there's nitro
+                which takes cold brew and injects it (through nitrogen) with
+                carbon dioxide for an even creamier texture and slightly sweet
+                flavor profile. No matter what you choose, chances are you won't
+                be disappointed!
+              </p>
+              <div class="whiskey-card--footer">
+                <div class="whiskey-card-image">
+                  <img src="assets/BlogImg3.png" alt="BlogImg1" />
+                </div>
+                <div>More</div>
+              </div>
+            </div>
+            <div class="whiskey-card" style="background-color: #997d6c">
+              <h3>How To Make A Great Coffee</h3>
+              <p class="whiskey-card--content">
+                Making a cup of coffee doesn't have to be complicated. Start by
+                gathering your supplies: coffee grounds, water, and a French
+                press, mug or other vessel. Next, measure out 2 tablespoons of
+                ground coffee per 8 ounces of water. If you're using a French
+                press, pour the measured grounds into the bottom of the press
+                followed by hot water (between 195-205 degrees Fahrenheit). Let
+                sit for three minutes before gently pushing down on the filter
+                to trap the grounds at the bottom; this will create an intense
+                flavor with slightly heavier body than filtered methods. If you
+                have neither a French press nor filter, just pour your measured
+                grounds directly into a mug or vessel and top with piping hot
+                water. Give it a stir and let it sit for 3-4 minutes before
+                consuming--but don't leave it too long as this method won't
+                produce quite as bold of a flavor as either filtering or
+                pressing would!
+              </p>
+              <div class="whiskey-card--footer">
+                <div class="whiskey-card-image">
+                  <img src="assets/BlogImg1.png" alt="BlogImg1" />
+                </div>
+                <div>More</div>
+              </div>
+            </div>
+            <div class="whiskey-card" style="background-color: #997d6c">
+              <h3>Why Does Caffeine Make Us Stay Awake?</h3>
+              <p class="whiskey-card--content">
+                Caffeine works by blocking adenosine receptors in the brain,
+                which facilitates energy production and makes us feel more
+                alert. Caffeine also increases adrenaline levels, further
+                boosting your energy and heart rate, as well as other hormones
+                like dopamine that can make you feel more awake. The combination
+                of these effects makes caffeine a stimulant that is all-too
+                common in both food and drinks to give us an extra boost of
+                energy when we need it most. It's no wonder why so many people
+                rely on caffeinated beverages - it really can make us stay
+                awake!
+              </p>
+              <div class="whiskey-card--footer">
+                <div class="whiskey-card-image">
+                  <img src="assets/BlogImg2.png" alt="BlogImg1" />
+                </div>
+                <div>More</div>
+              </div>
+            </div>
+            <div class="whiskey-card" style="background-color: #997d6c">
+              <h3>Different types of coffee Explained</h3>
+              <p class="whiskey-card--content">
+                Coffee is a staple in the lives of many and comes in a variety
+                of forms. Whether you prefer hot or iced, espresso-based or
+                filter, you’re spoilt for choice. To help beginners navigate
+                their first foray into the world of coffee, let’s breakdown some
+                basic categories: Espresso is an especially intense type of
+                brewed coffee made by forcing pressurized water through finely
+                ground beans. It has a strong flavor and can be used to make all
+                manner of delicious drinks like flat whites, cappuccinos and
+                lattes. Filter coffee is made with a paper filter that holds
+                back most grounds before allowing the liquid to drip down into
+                your cup. Its taste is less intense than that of espresso but
+                still robust enough to serve with milk or flavored syrups if
+                desired. Cold brew on the other hand isn't actually brewed using
+                heat but rather steeped in cold water overnight to produce a
+                smooth yet sweet drink - great over ice! Finally there's nitro
+                which takes cold brew and injects it (through nitrogen) with
+                carbon dioxide for an even creamier texture and slightly sweet
+                flavor profile. No matter what you choose, chances are you won't
+                be disappointed!
+              </p>
+              <div class="whiskey-card--footer">
+                <div class="whiskey-card-image">
+                  <img src="assets/BlogImg3.png" alt="BlogImg1" />
+                </div>
+                <div>More</div>
+              </div>
+            </div>
+          </div>
+          <div id="blog-cards-navigation" class="blog-cards-navigation">
+            Next
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="copyright-container">
+        <div style="margin-bottom: 8px">Created By Elinaui9</div>
+        <div>Copyright 2023 Eliza Coffee . All rights reserved.</div>
+      </div>
+      <div class="footer-image">
+        <img
+          src="assets/FooterImg.png"
+          alt="Footer Image"
+          height="400px"
+          width="auto"
+        />
+      </div>
+      <div class="footer-content">
+        <div class="grid-item">About</div>
+        <div class="grid-item">Customer Recourses</div>
+        <div class="grid-item">Services</div>
+        <div class="grid-item">Our Story</div>
+        <div class="grid-item">Menu</div>
+        <div class="grid-item">Payment Options</div>
+        <div class="grid-item">FAQ</div>
+        <div class="grid-item">Location</div>
+        <div class="grid-item">Refunds & Exchanges</div>
+        <div class="grid-item">Careers</div>
+        <div class="grid-item">Support</div>
+        <div class="grid-item">Limitation Of Liability</div>
+      </div>
+      <div class="footer-address">
+        <div class="address-grid-item">12 Jhon Avenue #35 - New York</div>
+        <div class="address-grid-item">elizacoffee@coffee.com</div>
+        <div class="address-grid-item">+1-222-34-eliza</div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
