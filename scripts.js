@@ -146,3 +146,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const contentElements = document.querySelectorAll('.whiskey-card .whiskey-card--content');
+
+//   contentElements.forEach(content => {
+//     const lines = 4; // Number of lines to display
+//     const lineHeight = parseFloat(window.getComputedStyle(content).lineHeight);
+//     const maxHeight = lines * lineHeight;
+
+//     if (content.scrollHeight > maxHeight) {
+//       let text = content.innerText;
+//       while (content.scrollHeight > maxHeight) {
+//         text = text.slice(0, -1);
+//         content.innerText = text + '...';
+//       }
+//     }
+//   });
+// });
+
