@@ -1075,7 +1075,7 @@ body {
     display: flex;
     width: auto;
     transform: translateX(30%);
-    width: 40px;
+    /* width: 40px; */
   }
 }
 
