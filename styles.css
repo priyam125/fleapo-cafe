@@ -968,6 +968,25 @@ body {
     flex-direction: column;
   }
 
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide-image-container {
+    height: 50%;
+  }
+
+  .slider-container {
+    width: 85%;
+    padding: 0px;
+  }
+
+  .slider-container::after {
+    font-size: 2.5rem;
+    top: -8%;
+    right: 5%;
+  }
+
   .offer-card {
     flex-direction: column;
     /* overflow: hidden; */
@@ -1010,6 +1029,11 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .services-heading {
+    font-size: 3.5rem;
   }
 
   .reserve-container {
@@ -1024,6 +1048,11 @@ body {
 
   .services-form {
     gap: 12px;
+    padding: 20px;
+  }
+
+  .blogs-container {
+    height: auto;
   }
 
   .blogs-container::before {
@@ -1032,6 +1061,33 @@ body {
     transform: translateX(-50%);
     font-size: 3rem;
     color: #f8e4be;
+  }
+
+  .whiskey-cards {
+    padding: 20px 0px 0px 20px;
+  }
+
+  .whiskey-card {
+    min-width: 300px;
+    flex-basis: 300px;
+    height: auto;
+    /* gap: 20px; */
+  }
+
+  .whiskey-card h3 {
+    line-height: 1.1;
+  }
+
+  .whiskey-card .whiskey-card--content {
+    height: 40%;
+  }
+
+  .whiskey-card-image {
+    width: 70%;
+  }
+
+  .products-conatiner h2 {
+    font-size: 3rem;
   }
 
   .footer-container {
