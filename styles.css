@@ -1070,6 +1070,12 @@ body {
     width: 100%;
     bottom: 1%;
   }
+
+  .carousel-button-container {
+    display: flex;
+    width: auto;
+    transform: translateX(30%);
+  }
 }
 
 /* Customize scrollbar for WebKit browsers (Chrome, Safari) */
