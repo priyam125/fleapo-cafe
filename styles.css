@@ -46,6 +46,10 @@ body {
   color: white;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .hero-container {
   display: flex;
   height: 140vh;
@@ -330,7 +334,7 @@ body {
 
 .offer-heading {
   font-size: 2rem;
-  color: #F8E4BE;
+  color: #f8e4be;
 }
 
 .offer-percentage {
@@ -806,7 +810,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .hero-info-container-heading {
     font-size: 5rem;
   }
@@ -816,6 +820,45 @@ body {
   .hero-container {
     height: 100vh;
   }
+  .offer-button {
+    width: 45%;
+  }
+  .offer-description {
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-info-container {
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
 }
 
 /* Customize scrollbar for WebKit browsers (Chrome, Safari) */
