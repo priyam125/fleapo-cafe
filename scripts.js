@@ -135,18 +135,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const whiskeyCardsContainer = document.querySelector(".whiskey-cards");
 
     nextButton.addEventListener("click", () => {
-      const cardWidth = whiskeyCardsContainer.querySelector(".whiskey-card").offsetWidth;
+      const cardWidth =
+        whiskeyCardsContainer.querySelector(".whiskey-card").offsetWidth;
       const gap = parseInt(getComputedStyle(whiskeyCardsContainer).gap);
       const scrollAmount = cardWidth + gap;
 
       whiskeyCardsContainer.scrollBy({
         left: scrollAmount,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     });
   }
 });
-
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   const contentElements = document.querySelectorAll('.whiskey-card .whiskey-card--content');
@@ -166,3 +166,14 @@ document.addEventListener("DOMContentLoaded", () => {
 //   });
 // });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const navbarLinks = document.getElementById("navbar-links");
+
+  hamburgerMenu.addEventListener("click", () => {
+    console.log("clicked")
+    navbarLinks.classList.toggle("active");
+  });
+
+  // Other scripts for slider, carousel, etc.
+});
