@@ -289,7 +289,7 @@ body {
   justify-content: center;
 }
 
-.offer-card::after {
+.offer-card::before {
   content: "Offer";
   position: absolute;
   top: -15%;
@@ -859,6 +859,112 @@ body {
     display: flex;
   }
 
+  .reserve-container::before {
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #f8e4be;
+    width: 70%;
+  }
+
+  .reserve-container {
+    flex-direction: column;
+  }
+
+  .offer-card {
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+
+  .offer-image-container {
+    display: none;
+  }
+
+  .offer-card::before {
+    content: "Offer";
+    position: absolute;
+    top: -12%;
+    left: 5%;
+    /* height: 20px;
+    width: 20px; */
+    font-size: 3rem;
+  }
+
+  .offer-description {
+    padding: 0px 12px;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .offer-button {
+    width: 50%;
+  }
+
+  .offer-detail {
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .service-card {
+    width: 45%;
+  }
+
+  .services-cards {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .reserve-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .services-form {
+    gap: 12px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer-content {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    padding: 28px 0px;
+  }
+
+  .footer-image {
+    order: 3;
+  }
+
+  .footer-image img {
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+  }
+
+  .footer-address {
+    order: 2;
+    width: 70%;
+    margin-left: auto;
+    transform: translateX(13%);
+  }
+
+  .copyright-container {
+    width: 100%;
+    bottom: 1%;
+  }
 }
 
 /* Customize scrollbar for WebKit browsers (Chrome, Safari) */
