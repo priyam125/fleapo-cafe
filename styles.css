@@ -502,7 +502,7 @@ body {
 }
 
 ::placeholder {
-  color: #9D8781;
+  color: #9d8781;
   font-size: large;
 }
 
@@ -840,7 +840,7 @@ body {
   --arrowTipTransform: var(--arrowHoverOffset);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .carousel-slide {
     flex: 0 0 calc(100% - 10px); /* Adjust width to show 1 slide at a time on smaller screens */
   }
@@ -851,15 +851,6 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .hero-info-container-heading {
-    font-size: 5rem;
-  }
-  .hero-info-container-description {
-    font-size: 18px;
-  }
-  .hero-container {
-    height: 100vh;
-  }
   .offer-button {
     width: 45%;
   }
@@ -872,12 +863,12 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero-container {
-    height: 100vh;
+    height: 60vh;
   }
 
   .hero-info {
     width: 80%;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .hero-info-container-heading {
@@ -891,6 +882,80 @@ body {
   .hero-info-container-button {
     padding: 8px 16px;
     font-size: 20px;
+  }
+
+  .slider {
+    height: 250px;
+  }
+
+  .slider-container {
+    width: 85%;
+  }
+
+  .services-cards {
+    width: 85%;
+  }
+
+  .offer-card {
+    width: 85%;
+    height: 300px;
+  }
+
+  .offer-card::before {
+    font-size: 3.5rem;
+  }
+
+  .offer-description {
+    width: 50%;
+    padding: 0 0 0 28px;
+  }
+
+  .offer-detail {
+    height: 35%;
+    overflow: hidden;
+  }
+
+  .offer-button {
+    width: 65%;
+  }
+
+  .offer-image-container {
+    padding: 0px;
+    width: 50%;
+  }
+
+  .service-card {
+    width: 16%;
+  }
+
+  .service-card div {
+    font-size: 14px;
+  }
+
+  .reserve-image-container img {
+    max-width: 100%;
+    display: flex;
+  }
+
+  .form-container {
+    padding: 0px;
+  }
+
+  .carousel {
+    width: 85%;
+  }
+
+  .carousel-slide {
+    flex: 0 0 calc(100%/2 - 20px); /* Adjust width to show 1 slide at a time on smaller screens */
+  }
+
+  .text-container {
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+
+  .carousel-button-container  {
+    width: 50%;
+    transform: translateX(30%);
   }
 }
 
