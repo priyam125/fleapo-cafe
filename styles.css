@@ -1008,11 +1008,11 @@ body {
   .navbar-right {
     display: none;
     flex-direction: column;
-    background-color: #333;
+    background-color: #54372b;
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
-    width: 100%;
+    width: 40%;
     text-align: center;
   }
 
