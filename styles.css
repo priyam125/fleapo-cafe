@@ -696,7 +696,7 @@ body {
   padding: 16px;
   box-shadow: 0 -16px 24px rgb(0 0 0 / 5%);
   color: #ffffff;
-  height: 350px;
+  /* height: 350px; */
   transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -1182,10 +1182,6 @@ body {
 
   .blog-card h3 {
     line-height: 1.1;
-  }
-
-  .blog-card .blog-card--content {
-    height: 40%;
   }
 
   .blog-card-image {
