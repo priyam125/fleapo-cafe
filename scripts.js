@@ -1,22 +1,86 @@
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
+//   const dots = document.querySelectorAll(".dot");
+//   const sliderInner = document.querySelector(".slider-inner");
+//   let currentSlide = 0;
+
+//   dots.forEach((dot, index) => {
+//     dot.addEventListener("click", () => {
+//       currentSlide = index;
+//       updateSlider();
+//     });
+//   });
+
+//   const updateSlider = () => {
+//     sliderInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+//     dots.forEach((dot) => dot.classList.remove("active"));
+//     dots[currentSlide].classList.add("active");
+//   };
+
+//   updateSlider(); // Initialize slider
+// });
+
+// scripts.js
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
-  const sliderInner = document.querySelector(".slider-inner");
-  let currentSlide = 0;
+  const readMoreBtns = document.querySelectorAll(".read-more-btn");
+  const descriptions = document.querySelectorAll(".description");
+  const paragraphContainers = document.querySelectorAll(".paragraph-container");
+  let currentIndex = 0;
+
+  function updateSlide(index) {
+    const slider = document.querySelector(".slider");
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((dot) => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
 
   dots.forEach((dot, index) => {
     dot.addEventListener("click", () => {
-      currentSlide = index;
-      updateSlider();
+      currentIndex = index;
+      updateSlide(currentIndex);
     });
   });
 
-  const updateSlider = () => {
-    sliderInner.style.transform = `translateX(-${currentSlide * 100}%)`;
-    dots.forEach((dot) => dot.classList.remove("active"));
-    dots[currentSlide].classList.add("active");
-  };
+  readMoreBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      if (btn.innerText === "Read More") {
+        paragraphContainers[index].style.maxHeight = "none";
+        btn.innerText = "Read Less";
+      } else {
+        paragraphContainers[index].style.maxHeight = "175px";
+        btn.innerText = "Read More";
+      }
+    });
+  });
 
-  updateSlider(); // Initialize slider
+  // Initialize the first slide as active
+  updateSlide(currentIndex);
+});
+
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const moreButtons = document.querySelectorAll(".more-button");
+
+  moreButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const blogCard = this.closest(".blog-card");
+      const content = blogCard.querySelector(".blog-card--content");
+
+      if (this.getAttribute("data-expanded") === "false") {
+        content.style.webkitLineClamp = "unset";
+        blogCard.classList.add("expanded");
+        this.setAttribute("data-expanded", "true");
+        this.textContent = "Less";
+      } else {
+        content.style.webkitLineClamp = "4";
+        blogCard.classList.remove("expanded");
+        this.setAttribute("data-expanded", "false");
+        this.textContent = "More";
+      }
+    });
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -132,15 +196,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add functionality to the "Next" button in the blog cards navigation
     const nextButton = document.getElementById("blog-cards-navigation");
-    const whiskeyCardsContainer = document.querySelector(".whiskey-cards");
+    const blogCardsContainer = document.querySelector(".blog-cards");
 
     nextButton.addEventListener("click", () => {
       const cardWidth =
-        whiskeyCardsContainer.querySelector(".whiskey-card").offsetWidth;
-      const gap = parseInt(getComputedStyle(whiskeyCardsContainer).gap);
+        blogCardsContainer.querySelector(".blog-card").offsetWidth;
+      const gap = parseInt(getComputedStyle(blogCardsContainer).gap);
       const scrollAmount = cardWidth + gap;
 
-      whiskeyCardsContainer.scrollBy({
+      blogCardsContainer.scrollBy({
         left: scrollAmount,
         behavior: "smooth",
       });
@@ -171,9 +235,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbarLinks = document.getElementById("navbar-links");
 
   hamburgerMenu.addEventListener("click", () => {
-    console.log("clicked")
+    console.log("clicked");
     navbarLinks.classList.toggle("active");
   });
 
   // Other scripts for slider, carousel, etc.
 });
+
+// scripts.js
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const moreButtons = document.querySelectorAll('.more-button');
+
+//   moreButtons.forEach(button => {
+//     button.addEventListener('click', (event) => {
+//       const blogCard = event.target.closest('.blog-card');
+//       blogCard.classList.toggle('expanded');
+
+//       if (blogCard.classList.contains('expanded')) {
+//         event.target.textContent = 'Less';
+//       } else {
+//         event.target.textContent = 'More';
+//       }
+//     });
+//   });
+// });
