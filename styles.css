@@ -656,7 +656,7 @@ body {
   flex-direction: column;
 }
 
-.whiskey-cards {
+.blog-cards {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
@@ -667,13 +667,13 @@ body {
   padding: 48px 48px 0 48px;
 }
 
-.whiskey-cards::-webkit-scrollbar {
+.blog-cards::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 5px;
   height: 5px;
 }
 
-.whiskey-cards::-webkit-scrollbar-thumb {
+.blog-cards::-webkit-scrollbar-thumb {
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0.5);
   background: linear-gradient(90deg, #02bcf5, #0073e6, #003ab9, #635bff);
@@ -682,11 +682,11 @@ body {
   opacity: 0.5;
 }
 
-.whiskey-cards:hover::-webkit-scrollbar-thumb {
+.blog-cards:hover::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
-.whiskey-card {
+.blog-card {
   display: flex;
   flex-direction: column;
   min-width: 450px;
@@ -700,17 +700,17 @@ body {
   transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.whiskey-card:hover {
+.blog-card:hover {
   transform: scale(1.04) translateY(-16px);
   box-shadow: 0 -16px 24px rgb(0 0 0 / 10%);
 }
 
-.whiskey-card h3 {
+.blog-card h3 {
   padding-top: 0;
   line-height: 1.35;
 }
 
-.whiskey-card .whiskey-card--content {
+.blog-card .blog-card--content {
   line-height: 24px;
   font-size: 15px;
   font-weight: 300;
@@ -721,7 +721,7 @@ body {
   -webkit-box-orient: vertical;
 }
 
-.whiskey-card .whiskey-card--footer {
+.blog-card .blog-card--footer {
   display: flex;
   justify-content: space-between;
 }
@@ -792,11 +792,11 @@ body {
   color: #fff3e0a6;
 }
 
-.whiskey-card .whiskey-card--content img {
+.blog-card .blog-card--content img {
   max-width: 100%;
 }
 
-.whiskey-card .whiskey-card--link {
+.blog-card .blog-card--link {
   line-height: 1.5;
   font-size: 15px;
   font-weight: 700;
@@ -804,12 +804,12 @@ body {
   margin: auto 0 0 0;
 }
 
-.whiskey-card h3 a,
-.whiskey-card .whiskey-card--link a {
+.blog-card h3 a,
+.blog-card .blog-card--link a {
   color: #ffffff;
 }
 
-.whiskey-card .whiskey-card--link a svg {
+.blog-card .blog-card--link a svg {
   --arrowSpacing: 5px;
   --arrowHoverTransition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
   --arrowHoverOffset: translateX(3px);
@@ -833,11 +833,11 @@ body {
   transition: transform var(--hoverTransition, var(--arrowHoverTransition));
 }
 
-.whiskey-card:hover .HoverArrow__linePath {
+.blog-card:hover .HoverArrow__linePath {
   --arrowLineOpacity: 1;
 }
 
-.whiskey-card:hover .HoverArrow__tipPath {
+.blog-card:hover .HoverArrow__tipPath {
   --arrowTipTransform: var(--arrowHoverOffset);
 }
 
@@ -1138,26 +1138,26 @@ body {
     color: #f8e4be;
   }
 
-  .whiskey-cards {
+  .blog-cards {
     padding: 20px 0px 0px 20px;
   }
 
-  .whiskey-card {
+  .blog-card {
     min-width: 300px;
     flex-basis: 300px;
     height: auto;
     /* gap: 20px; */
   }
 
-  .whiskey-card h3 {
+  .blog-card h3 {
     line-height: 1.1;
   }
 
-  .whiskey-card .whiskey-card--content {
+  .blog-card .blog-card--content {
     height: 40%;
   }
 
-  .whiskey-card-image {
+  .blog-card-image {
     width: 70%;
   }
 
